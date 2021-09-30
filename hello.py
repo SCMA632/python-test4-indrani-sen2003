@@ -10,7 +10,7 @@ def hello_world():
     os.getcwd()#get cureent working directory
 #os.chdir("C:\\Users\\HP\\Desktop\\VCU COURSES\\SCMA\\SCMA IPL")#change directory
     os.getcwd()
-    cric=pd.read_csv('d:/IPL Ball-by-Ball 2008-2020.csv')
+    cric=pd.read_csv('IPL Ball-by-Ball 2008-2020.csv')
     cric.columns
     cric['batsman'].unique()
     cric1=cric.groupby(['batsman','id'])[['batsman_runs']].sum()#SUBSETTING BATSMAN
